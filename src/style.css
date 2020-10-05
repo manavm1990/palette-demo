@@ -1,5 +1,4 @@
 :root {
-  /* https://developer.mozilla.org/en-US/docs/Web/CSS/filter */
   --contrast: 100%;
   --hue: 0deg;
 }
@@ -38,7 +37,6 @@ button {
 }
 
 #palette {
-  align-items: flex-end;
   background: #161616;
   display: flex;
 }
