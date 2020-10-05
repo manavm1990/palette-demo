@@ -13,6 +13,7 @@
 
     <title>Palette</title>
   </head>
+
   <body>
     <main>
       <div id="display" class="tool-adjustments"></div>
@@ -27,22 +28,30 @@
 
       <div id="tools">
         <div>
-          <label for="">Update Current Palette Color</label
-          ><input type="color" />
+          <label for="color">Update Current Palette Color</label
+          ><input type="color" id="color" />
         </div>
         <div>
-          <label for="">Display Contrast</label
+          <label for="contrast">Display Contrast</label
           ><input
             type="range"
             min="0"
             max="200"
             value="100"
             data-tool="contrast"
+            id="contrast"
           />
         </div>
         <div>
-          <label for="">Display Hue</label
-          ><input type="range" min="0" max="360" value="0" data-tool="hue" />
+          <label for="hue">Display Hue</label
+          ><input
+            type="range"
+            min="0"
+            max="360"
+            value="0"
+            data-tool="hue"
+            id="hue"
+          />
         </div>
       </div>
 
