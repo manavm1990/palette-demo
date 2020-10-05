@@ -10,9 +10,7 @@ const tools = document.querySelectorAll("[type='range']");
 // Get the 'numbered color variables' out of 'paletteComputedStyles'
 const paletteComputedStyles = getComputedStyle(palettes[0]);
 
-palettes.forEach(function (palette, index) {
-  console.log(palette, index);
-
+palettes.forEach((palette, index) => {
   palette.style.setProperty(
     "background-color",
     paletteComputedStyles.getPropertyValue(`--${index}`)
