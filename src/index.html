@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Palette</title>
+  </head>
+  <body>
+    <main>
+      <div id="display" class="tool-adjustments"></div>
+
+      <div id="palette">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div id="tools">
+        <div>
+          <label for="">Update Current Palette Color</label
+          ><input type="color" />
+        </div>
+        <div>
+          <label for="">Display Contrast</label
+          ><input
+            type="range"
+            min="0"
+            max="200"
+            value="100"
+            data-tool="contrast"
+          />
+        </div>
+        <div>
+          <label for="">Display Hue</label
+          ><input type="range" min="0" max="360" value="0" data-tool="hue" />
+        </div>
+      </div>
+
+      <button>Reset Contrast/Hue</button>
+    </main>
+
+    <!-- 'Connect' JS to this HTML file. -->
+    <script src="./scripts.js"></script>
+  </body>
+</html>
