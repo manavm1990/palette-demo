@@ -7,4 +7,5 @@ const palettes = document.querySelectorAll("#palette div");
 
 const tools = document.querySelectorAll("[type='range']");
 
-console.log(tools);
+// Get the 'numbered color variables' out of 'paletteComputedStyles'
+const paletteComputedStyles = getComputedStyle(palettes[0]);
